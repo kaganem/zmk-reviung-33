@@ -11,11 +11,11 @@
     chosen {
         // 34 keys.
 
-        zmk,matrix_transform = &dual_1u_transform;
+        //zmk,matrix_transform = &dual_1u_transform;
 
         // 33 keys. Center two thumb keys replaced by a single 2u key. Remember to adjust your
         // keymap accordingly!
-        // zmk,matrix_transform = &single_2u_transform;
+        zmk,matrix_transform = &single_2u_transform;
     };
 };
 
@@ -29,7 +29,7 @@
 &kp Q        &kp W        &kp E       &kp R     &kp T      &kp Y  &kp U          &kp I           &kp O          &kp P
 &kp A        &kp S        &kp D       &kp F     &kp G      &kp H  &kp J          &kp K           &kp L          &kp SEMI
 &mt LSHFT Z  &mt LCTRL X  &mt LALT C  &kp V     &kp B      &kp N  &kp M          &mt RALT COMMA  &mt RCTRL DOT  &mt RSHFT SLASH
-                                      &kp LGUI  &kp SPACE         &kp BACKSPACE
+                                      &kp LGUI             &kp SPACE         &kp BACKSPACE
             >;
         };
     };
