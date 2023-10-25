@@ -24,7 +24,7 @@
 
 / {
 	behaviors {
-		mt: balanced_homerow_mods {
+		mt: behavior_mod_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "REQUIRE_PRIOR_IDLE";
 			#binding-cells = <2>;
