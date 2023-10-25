@@ -23,6 +23,21 @@
 };
 
 / {
+	behaviors {
+		mt: balanced_homerow_mods {
+			compatible = "zmk,behavior-hold-tap";
+			label = "REQUIRE_PRIOR_IDLE";
+			#binding-cells = <2>;
+			flavor = "tap-unless-interrupted";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <200>;
+			require-prior-idle-ms = <125>;
+			bindings = <&kp>, <&kp>;
+		};
+	};
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,7 +64,7 @@
             bindings = <
 &kp N1              &kp N2              &kp N3           &kp N4           &kp N5      &kp N6       &kp N7     &kp N8            &kp N9             &kp N0
 &mt LWIN TAB        &mt LALT BACKSLASH  &mt LCTRL APOS   &kp GRAVE        &kp DELETE  &kp BSPC     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT
-&mt LEFT_SHIFT ESC  &kp CLCK            &kp PAUSE_BREAK  &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt RIGHT_SHIFT ENTER
+&mt LEFT_SHIFT ESC  &kp CLCK            &kp DOT  &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt RIGHT_SHIFT ENTER
                                                                           &mo 3                    &trans     &trans
             >;
         };
