@@ -44,27 +44,27 @@
             label = "Base";
             bindings = <
 &kp Q          &kp W        &kp E         &kp R  &kp T  &kp Y    &kp U      &kp I         &kp O        &kp P
-&bhm LWIN A    &bhm LALT S  &bhm LCTRL D  &kp F  &kp G  &kp H    &kp J      &bhm RCTRL K  &bhm RALT L  &kp SEMI
-&bhm LSHIFT Z  &kp X        &kp C         &kp V  &kp B  &kp N    &kp M      &kp COMMA     &kp DOT      &bhm LEFT_SHIFT SLASH
+&bhm LSHIFT A  &bhm LALT S  &bhm LCTRL D  &kp F  &kp G  &kp H    &kp J      &bhm RCTRL K  &bhm RALT L  &bhm RSHIFT SEMICOLON
+&bhm LWIN Z    &kp X        &kp C         &kp V  &kp B  &kp N    &kp M      &kp COMMA     &kp DOT      &bhm RWIN SLASH
                                                  &mo 1           &kp SPACE  &mo 2
             >;
         };
 
         navigation_left {
             bindings = <
-&kp N1               &kp N2               &kp N3           &kp N4           &kp N5      &kp N6       &kp N7     &kp N8            &kp N9             &kp N0
-&bhm LWIN TAB        &bhm LALT BACKSLASH  &bhm LCTRL APOS  &kp GRAVE        &kp DELETE  &kp BSPC     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT
-&bhm LEFT_SHIFT ESC  &kp CLCK             &kp PAUSE_BREAK  &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &bhm RIGHT_SHIFT ENTER
-                                                                            &trans                   &trans     &mo 3
+&kp N1          &kp N2               &kp N3           &kp N4           &kp N5      &kp N6       &kp N7     &kp N8            &kp N9             &kp N0
+&bhm LSHFT TAB  &bhm LALT BACKSLASH  &bhm LCTRL APOS  &kp GRAVE        &kp DELETE  &kp BSPC     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT
+&bhm LGUI ESC   &kp CLCK             &kp PAUSE_BREAK  &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
+                                                                       &trans                   &trans     &mo 3
             >;
         };
 
         navigation_right {
             bindings = <
-&kp N1               &kp N2               &kp N3           &kp N4           &kp N5      &kp N6       &kp N7     &kp N8            &kp N9             &kp N0
-&bhm LWIN TAB        &bhm LALT BACKSLASH  &bhm LCTRL APOS  &kp GRAVE        &kp DELETE  &kp BSPC     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT
-&bhm LEFT_SHIFT ESC  &kp CLCK             &kp DOT          &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &bhm RIGHT_SHIFT ENTER
-                                                                            &mo 3                    &trans     &trans
+&kp N1             &kp N2               &kp N3           &kp N4           &kp N5      &kp N6       &kp N7     &kp N8            &kp N9             &kp N0
+&bhm LSHIFT TAB    &bhm LALT BACKSLASH  &bhm LCTRL APOS  &kp GRAVE        &kp DELETE  &kp BSPC     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT
+&bhm LEFT_GUI ESC  &kp CLCK             &kp DOT          &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
+                                                                          &mo 3                    &trans     &trans
             >;
         };
 
@@ -83,6 +83,15 @@
 &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &none           &none         &none         &ext_power EP_ON   &out OUT_USB
 &rgb_ug RGB_TOG  &none            &none            &none            &none            &none           &none         &none         &ext_power EP_OFF  &out OUT_BLE
                                                                     &sys_reset                       &trans        &bt BT_CLR
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                                &trans            &trans  &trans
             >;
         };
     };
