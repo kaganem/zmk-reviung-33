@@ -52,10 +52,10 @@
 
         navigation_left {
             bindings = <
-&kp N1            &kp N2         &kp N3           &kp N4           &kp N5      &kp N6       &kp N7     &kp N8            &kp N9             &kp N0
-&kp TAB           &kp BACKSLASH  &bhm LCTRL APOS  &kp GRAVE        &kp DELETE  &kp BSPC     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT
-&mt LSHFT ESCAPE  &kp CLCK       &kp PAUSE_BREAK  &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
-                                                                   &trans                   &trans     &mo 3
+&kp N1            &kp N2     &kp N3     &kp N4  &kp N5      &kp N6      &kp N7            &kp N8             &kp N9         &kp N0
+&mt LALT TAB      &kp TILDE  &kp LCTRL  &trans  &kp DELETE  &kp BSPC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
+&mt LSHFT ESCAPE  &trans     &trans     &trans  &trans      &trans      &trans            &trans             &trans         &mt RSHFT ENTER
+                                                &trans                  &trans            &mo 3
             >;
         };
 
