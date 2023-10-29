@@ -61,10 +61,10 @@
 
         navigation_right {
             bindings = <
-&kp N1             &kp N2               &kp N3           &kp N4           &kp N5      &kp N6       &kp N7     &kp N8            &kp N9             &kp N0
-&bhm LSHIFT TAB    &bhm LALT BACKSLASH  &bhm LCTRL APOS  &kp GRAVE        &kp DELETE  &kp BSPC     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT
-&bhm LEFT_GUI ESC  &kp CLCK             &kp DOT          &kp PRINTSCREEN  &kp INSERT  &kp MINUS    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
-                                                                          &mo 3                    &trans     &trans
+&kp N1          &kp N2    &kp N3     &kp N4           &kp N5      &kp N6      &kp N7    &kp N8    &kp N9  &kp N0
+&bhm LALT TAB   &trans    &kp LCTRL  &trans           &kp DELETE  &kp BSPC    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&bhm LSHFT ESC  &kp CLCK  &trans     &kp PRINTSCREEN  &kp INSERT  &trans      &trans    &trans    &trans  &kp ENTER
+                                                      &mo 3                   &trans    &trans
             >;
         };
 
