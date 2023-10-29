@@ -50,21 +50,21 @@
             >;
         };
 
-        navigation_left {
+        numeric {
             bindings = <
-&kp N1            &kp N2     &kp N3     &kp N4  &kp N5      &kp N6      &kp N7            &kp N8             &kp N9         &kp N0
-&mt LALT TAB      &kp TILDE  &kp LCTRL  &trans  &kp DELETE  &kp BSPC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
-&mt LSHFT ESCAPE  &trans     &trans     &trans  &trans      &trans      &trans            &trans             &trans         &mt RSHFT ENTER
-                                                &trans                  &trans            &mo 3
+&kp N1            &kp N2     &kp N3     &kp N4   &kp N5      &kp N6            &kp N7            &kp N8             &kp N9         &kp N0
+&mt LALT TAB      &kp TILDE  &kp LCTRL  &kp INS  &kp DELETE  &kp BSPC          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
+&mt LSHFT ESCAPE  &trans     &trans     &trans   &kp CAPS    &kp SCROLLLOCK    &kp MINUS         &kp EQUAL          &trans         &mt RSHFT ENTER
+                                                 &trans                        &trans            &mo 3
             >;
         };
 
-        navigation_right {
+        navigation {
             bindings = <
-&kp N1          &kp N2    &kp N3     &kp N4           &kp N5      &kp N6      &kp N7    &kp N8    &kp N9  &kp N0
-&bhm LALT TAB   &trans    &kp LCTRL  &trans           &kp DELETE  &kp BSPC    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&bhm LSHFT ESC  &kp CLCK  &trans     &kp PRINTSCREEN  &kp INSERT  &trans      &trans    &trans    &trans  &kp ENTER
-                                                      &mo 3                   &trans    &trans
+&trans         &trans  &trans  &trans  &trans      &trans           &trans    &trans    &trans  &trans
+&mt LALT TAB   &trans  &trans  &trans  &kp DELETE  &kp BACKSPACE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&mt LSHFT ESC  &trans  &trans  &trans  &trans      &trans           &trans    &trans    &trans  &mt RSHFT ENTER
+                                       &trans                       &trans    &trans
             >;
         };
 
