@@ -64,7 +64,7 @@
 &trans      &trans  &trans  &trans   &trans      &trans           &trans    &trans    &trans  &trans
 &kp LSHIFT  &trans  &trans  &kp TAB  &kp DELETE  &kp BACKSPACE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
 &kp ESCAPE  &trans  &trans  &trans   &trans      &trans           &trans    &trans    &trans  &bhm RSHFT ENTER
-                                     &trans                       &trans    &trans
+                                     &mo 3                        &trans    &trans
             >;
         };
 
