@@ -43,28 +43,28 @@
         base {
             label = "Base";
             bindings = <
-&kp Q         &kp W  &kp E         &kp R  &kp T  &kp Y    &kp U           &kp I      &kp O    &kp P
-&bhm LALT A   &kp S  &bhm LCTRL D  &kp F  &kp G  &kp H    &kp J           &kp K      &kp L    &kp SEMI
-&bhm LSHFT Z  &kp X  &kp C         &kp V  &kp B  &kp N    &kp M           &kp COMMA  &kp DOT  &bhm RSHFT SLASH
-                                          &mo 1           &mt LWIN SPACE  &mo 2
+&kp Q          &kp W  &kp E         &kp R  &kp T  &kp Y    &kp U           &kp I      &kp O    &kp P
+&bhm LSHIFT A  &kp S  &bhm LCTRL D  &kp F  &kp G  &kp H    &kp J           &kp K      &kp L    &kp SEMI
+&bhm LALT Z    &kp X  &kp C         &kp V  &kp B  &kp N    &kp M           &kp COMMA  &kp DOT  &bhm RSHFT SLASH
+                                           &mo 1           &mt LWIN SPACE  &mo 2
             >;
         };
 
         numeric {
             bindings = <
-&kp N1         &kp N2     &kp N3     &kp N4   &kp N5      &kp N6            &kp N7            &kp N8             &kp N9         &kp N0
-&bhm LALT TAB  &kp TILDE  &kp LCTRL  &kp INS  &kp DELETE  &kp BSPC          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
-&bhm LSHFT Z   &trans     &trans     &trans   &kp CAPS    &kp SCROLLLOCK    &kp MINUS         &kp EQUAL          &trans         &bhm RSHFT ENTER
-                                              &trans                        &trans            &mo 3
+&kp N1      &kp N2     &kp N3     &kp N4   &kp N5      &kp N6      &kp N7            &kp N8             &kp N9         &kp N0
+&kp LSHIFT  &kp TILDE  &kp LCTRL  &kp TAB  &kp DELETE  &kp BSPC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
+&kp ESCAPE  &trans     &trans     &trans   &kp CAPS    &kp INS     &kp MINUS         &kp EQUAL          &trans         &bhm RSHFT ENTER
+                                           &trans                  &trans            &mo 3
             >;
         };
 
         navigation {
             bindings = <
-&trans         &trans  &trans  &trans  &trans      &trans           &trans    &trans    &trans  &trans
-&bhm LALT TAB  &trans  &trans  &trans  &kp DELETE  &kp BACKSPACE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&bhm LSHFT Z   &trans  &trans  &trans  &trans      &trans           &trans    &trans    &trans  &bhm RSHFT ENTER
-                                       &trans                       &trans    &trans
+&trans      &trans  &trans  &trans   &trans      &trans           &trans    &trans    &trans  &trans
+&kp LSHIFT  &trans  &trans  &kp TAB  &kp DELETE  &kp BACKSPACE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&kp ESCAPE  &trans  &trans  &trans   &trans      &trans           &trans    &trans    &trans  &bhm RSHFT ENTER
+                                     &trans                       &trans    &trans
             >;
         };
 
