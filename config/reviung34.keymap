@@ -53,7 +53,7 @@
         numeric {
             bindings = <
 &kp N1      &kp N2     &kp N3     &kp N4   &kp N5      &kp N6      &kp N7            &kp N8             &kp N9         &kp N0
-&kp LSHIFT  &kp TILDE  &kp LCTRL  &kp TAB  &kp DELETE  &kp BSPC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
+&kp LSHIFT  &kp GRAVE  &kp LCTRL  &kp TAB  &kp DELETE  &kp BSPC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
 &kp ESCAPE  &trans     &trans     &trans   &kp CAPS    &kp INS     &kp MINUS         &kp EQUAL          &trans         &bhm RSHFT ENTER
                                            &trans                  &trans            &mo 3
             >;
