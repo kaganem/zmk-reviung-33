@@ -14,7 +14,9 @@
 / {
     chosen {
         // 34 keys.
+
         zmk,matrix_transform = &dual_1u_transform;
+
         // 33 keys.
         //zmk,matrix_transform = &single_2u_transform;
     };
@@ -41,46 +43,46 @@
         base {
             label = "Base";
             bindings = <
-&kp Q          &kp W  &kp E         &kp R  &kp T  &kp Y    &kp U           &kp I      &kp O    &kp P
-&bhm LSHIFT A  &kp S  &bhm LCTRL D  &kp F  &kp G  &kp H    &kp J           &kp K      &kp L    &kp SEMI
-&bhm LALT Z    &kp X  &kp C         &kp V  &kp B  &kp N    &kp M           &kp COMMA  &kp DOT  &bhm RSHFT SLASH
-                                           &mo 1  &mt LWIN SPACE         &mt LWIN SPACE  &mo 2
+&kp Q          &kp W  &kp E  &kp R  &kp T      &kp Y                   &kp U               &kp I        &kp O    &kp P
+&bhm LSHIFT A  &kp S  &kp D  &kp F  &kp G      &kp H                   &kp J               &kp K        &kp L    &bhm RSHIFT SEMICOLON
+&kp Z          &kp X  &kp C  &kp V  &kp B      &kp N                   &kp M               &kp COMMA    &kp DOT  &kp SLASH
+                                    &lt 1 ESC         &mt LCTRL SPACE  &mt LWIN BACKSPACE  &lt 2 ENTER
             >;
         };
 
         numeric {
             bindings = <
-&kp N1      &kp N2     &kp N3     &kp N4   &kp N5      &kp N6      &kp N7            &kp N8             &kp N9         &kp N0
-&kp LSHIFT  &kp GRAVE  &kp LCTRL  &kp TAB  &kp DELETE  &kp BSPC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
-&kp ESCAPE  &trans     &trans     &trans   &kp CAPS    &kp INS     &kp MINUS         &kp EQUAL          &trans         &bhm RSHFT ENTER
-                                           &trans       &trans             &trans            &mo 3
+&kp N1      &kp N2     &kp N3     &kp N4   &kp N5      &kp N6            &kp N7            &kp N8             &kp N9         &kp N0
+&kp LSHIFT  &kp GRAVE  &kp LCTRL  &kp TAB  &kp DELETE  &kp BSPC          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE
+&kp ESCAPE  &trans     &trans     &trans   &kp CAPS    &kp INS           &kp MINUS         &kp EQUAL          &trans         &kp ENTER
+                                           &trans                &trans  &trans            &mo 3
             >;
         };
 
         navigation {
             bindings = <
-&trans      &trans  &trans  &trans   &trans      &trans           &trans    &trans    &trans  &trans
-&kp LSHIFT  &trans  &trans  &kp TAB  &kp DELETE  &kp BACKSPACE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&kp ESCAPE  &trans  &trans  &trans   &trans      &trans           &trans    &trans    &trans  &bhm RSHFT ENTER
-                                     &mo 3        &trans                  &trans    &trans
+&trans      &trans  &trans  &trans   &trans      &trans                 &trans    &trans    &trans  &trans
+&kp LSHIFT  &trans  &trans  &kp TAB  &kp DELETE  &kp BACKSPACE          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&kp ESCAPE  &trans  &trans  &trans   &trans      &trans                 &trans    &trans    &trans  &kp ENTER
+                                     &mo 3                      &trans  &trans    &trans
             >;
         };
 
         functional {
             bindings = <
-&kp F1             &kp F2      &kp F3                   &kp F4        &kp F5      &kp F6           &kp F7    &kp F8     &kp F9                &kp F10
-&bhm LSHFT K_STOP  &kp K_PREV  &bhm LCTRL C_PLAY_PAUSE  &kp K_NEXT    &kp DELETE  &kp BACKSPACE    &kp HOME  &kp PG_DN  &kp PG_UP             &kp END
-&trans             &kp K_MUTE  &kp C_VOL_DN             &kp C_VOL_UP  &kp C_REC   &kp C_BRI_DN     &kp F11   &kp F12    &kp C_BRIGHTNESS_INC  &trans
-                                                                      &trans       &trans                  &mo 4     &trans
+&kp F1             &kp F2      &kp F3                   &kp F4        &kp F5        &kp F6                &kp F7    &kp F8     &kp F9                &kp F10
+&bhm LSHFT K_STOP  &kp K_PREV  &bhm LCTRL C_PLAY_PAUSE  &kp K_NEXT    &kp DELETE    &kp BACKSPACE         &kp HOME  &kp PG_DN  &kp PG_UP             &kp END
+&trans             &kp K_MUTE  &kp C_VOL_DN             &kp C_VOL_UP  &kp LEFT_ALT  &kp C_BRI_DN          &kp F11   &kp F12    &kp C_BRIGHTNESS_INC  &trans
+                                                                      &trans                       &mo 4  &mo 4     &trans
             >;
         };
 
         config {
             bindings = <
-&rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4
-&rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &none           &none         &none         &ext_power EP_ON   &out OUT_USB
-&rgb_ug RGB_TOG  &none            &none            &none            &none            &none           &none         &none         &ext_power EP_OFF  &out OUT_BLE
-                                                                    &sys_reset       &trans                  &trans        &bt BT_CLR
+&rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4
+&rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &none                 &none         &none         &ext_power EP_ON   &out OUT_USB
+&rgb_ug RGB_TOG  &none            &none            &none            &none            &none                 &none         &none         &ext_power EP_OFF  &out OUT_BLE
+                                                                    &sys_reset                     &trans  &trans        &bt BT_CLR
             >;
         };
     };
