@@ -43,10 +43,10 @@
         base {
             label = "Base";
             bindings = <
-&kp Q          &kp W  &kp E  &kp R  &kp T      &kp Y                   &kp U               &kp I        &kp O    &kp P
-&bhm LSHIFT A  &kp S  &kp D  &kp F  &kp G      &kp H                   &kp J               &kp K        &kp L    &bhm RSHIFT SEMICOLON
-&kp Z          &kp X  &kp C  &kp V  &kp B      &kp N                   &kp M               &kp COMMA    &kp DOT  &kp SLASH
-                                    &lt 1 ESC         &mt LCTRL SPACE  &mt LWIN BACKSPACE  &lt 2 ENTER
+&kp Q          &kp W  &kp E        &kp R  &kp T  &kp Y                  &kp U         &kp I        &kp O    &kp P
+&bhm LSHIFT A  &kp S  &mt LCTRL D  &kp F  &kp G  &kp H                  &kp J         &mt LCTRL K  &kp L    &bhm RSHIFT SEMICOLON
+&kp Z          &kp X  &kp C        &kp V  &kp B  &kp N                  &kp M         &kp COMMA    &kp DOT  &kp SLASH
+                                          &mo 1         &mt LWIN SPACE  &kp LEFT_WIN  &mo 2
             >;
         };
 
@@ -61,10 +61,10 @@
 
         navigation {
             bindings = <
-&trans      &trans  &trans  &trans   &trans      &trans                 &trans    &trans    &trans  &trans
-&kp LSHIFT  &trans  &trans  &kp TAB  &kp DELETE  &kp BACKSPACE          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&kp ESCAPE  &trans  &trans  &trans   &trans      &trans                 &trans    &trans    &trans  &kp ENTER
-                                     &mo 3                      &trans  &trans    &trans
+&trans      &trans  &trans     &trans   &trans      &trans                 &trans    &trans    &trans  &trans
+&kp LSHIFT  &trans  &kp LCTRL  &kp TAB  &kp DELETE  &kp BACKSPACE          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&kp ESCAPE  &trans  &trans     &trans   &trans      &trans                 &trans    &trans    &trans  &kp ENTER
+                                        &mo 3                      &trans  &trans    &trans
             >;
         };
 
